@@ -1,0 +1,93 @@
+/* ------------------------------ */
+/* DEFAULT MOBILE VIEW            */
+/* ------------------------------ */
+
+body {
+    background-color: #dedede;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p, ul, li {
+    font-size: 18px;
+}
+
+main {
+    padding: 10px;
+}
+
+div {
+    display: inline-block;
+    width: 90%;              /* 1 per row on mobile */
+    margin: 10px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* REQUIRED MOBILE IMAGE SIZE */
+div img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;        /* Prevent GitHub from blowing up images */
+    max-height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.label {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+/* -------------------------------- */
+/* TABLET VIEW — MIN-WIDTH: 772px   */
+/* -------------------------------- */
+
+@media (min-width: 772px) {
+
+    div {
+        width: 45vw;             /* REQUIRED: 45% of viewport width */
+        display: inline-block;   /* REQUIRED: to sit side-by-side */
+        vertical-align: top;
+        margin: 10px;
+    }
+
+    div img {
+        max-height: 30vh;        /* REQUIRED: 30% of viewport height */
+        width: auto;             /* Keep proportions */
+        height: auto;
+        margin: auto;
+    }
+}
+
+
+/* ---------------------------------- */
+/* LARGE SCREEN VIEW — MIN-WIDTH: 998px */
+/* ---------------------------------- */
+
+@media (min-width: 998px) {
+
+    div {
+        width: 30vw;             /* REQUIRED: 30% of viewport width */
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    div img {
+        width: auto;
+        height: auto;
+    }
+}
